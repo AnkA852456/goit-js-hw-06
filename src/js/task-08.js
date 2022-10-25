@@ -1,9 +1,9 @@
 const refs = {
-  form: document.querySelector(".login-form"),
+  formEl: document.querySelector(".login-form"),
   labelEl: document.querySelector("label"),
 };
 
-refs.form.addEventListener("submit", onFormSubmit);
+refs.formEl.addEventListener("submit", onFormSubmit);
 
 function onFormSubmit(event) {
   event.preventDefault();
@@ -16,11 +16,11 @@ function onFormSubmit(event) {
     return;
   }
 
-  const cred = {
+  const credGet = {
     Email: event.currentTarget.elements.email.value,
     Password: event.currentTarget.password.value,
   };
-  console.log(cred);
+  console.log(credGet);
 
-  refs.form.reset();
+  refs.formEl.reset();
 }

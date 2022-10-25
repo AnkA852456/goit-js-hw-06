@@ -28,6 +28,7 @@ function createBoxes(amount) {
 
     refs.boxesEl.append(divs);
   }
+
   refs.boxesEl.style.display = "flex";
   refs.boxesEl.style.flexWrap = "wrap";
   refs.boxesEl.style.alignItems = "center";
